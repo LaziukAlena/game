@@ -14,11 +14,8 @@ export class ProbabilityTable {
     for (let i = 0; i < this.diceList.length; i++) {
       const row = [this.diceList[i].toString()];
       for (let j = 0; j < this.diceList.length; j++) {
-        if (i === j) {
-          row.push('—'); // Или "0.3333", если хочешь
-        } else {
-          row.push(ProbabilityCalculator.calc(this.diceList[i], this.diceList[j]));
-        }
+        if (i === j) row.push('—');
+        else row.push(ProbabilityCalculator.calc(this.diceList[i], this.diceList[j]));
       }
       table.push(row);
     }
