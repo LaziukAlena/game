@@ -1,0 +1,15 @@
+{
+    "name": "non-transitive-dice-game",
+    "version": "1.0.0",
+    "description": "Console game with non-transitive dice and fair HMAC protocol",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "cli-table3": "^0.6.2",
+      "readline-sync": "^1.4.10"
+    }
+  }
+  
